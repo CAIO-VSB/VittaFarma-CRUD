@@ -1,0 +1,600 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.content-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img-meus-dados {
+    position: absolute;
+    background-color: #004aad;
+    width: 25%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-meus-dados {
+    width: 150px;
+}
+
+.titles {
+    font-size: 1rem;
+}
+
+.title-info-adicionais {
+    font-size: 1.2rem;
+}
+
+.no-responsive-info-pessoais {
+    position: relative;
+    top: 42%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.info-user-left {
+    position: relative;
+    top: 50%;
+    font-size: 0.90rem;
+    font-weight: 500;
+}
+
+.info-email-left {
+    position: relative;
+    top: 50%;
+    font-size: 0.90rem;
+    font-weight: 500;
+}
+
+.infos-user-left {
+    font-weight: 500;
+}
+
+.info-user-right {
+    background-color: #004aad;
+    padding: 1.2rem;
+    color: #fff;
+}
+
+.infos-adicionais-right {
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.infos-adicionais-right + p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.lembrete-aviso {
+    font-size: 0.90rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.div-lembrete-aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.div-flex-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#bnt-trocar-senha {
+    font-size: 0.90rem;
+    margin-top: 5px;
+    width: 29.9%;
+}
+
+.inputEmailError {
+    border: 1px solid red;
+    border-radius: 5.5px;
+    animation: shake .13s 3;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.p-info-pessoais {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .content-main {
+        width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .main {
+        overflow-x: hidden;
+    }
+
+    .responvise-splitter {
+        flex-direction: column;
+    }
+
+    .painel1 {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    ::v-deep(.p-splitter-gutter) {
+        display: none;
+    } 
+
+    .titles {
+        font-size: 0.90rem;
+        position: relative;
+        top: 17px;
+        margin-bottom: 10px;
+    }
+
+    .title-info-pessoais {
+        position: absolute;
+        bottom: 5px;
+        color: #fff;
+    }
+
+    .div-info-pessoais {
+        position: absolute;
+        background-color: #004aad;
+        width: 100%;
+        height: 11%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 127px;
+    }
+
+    .img-meus-dados {
+        max-width: 65px;
+        max-height: 70px;
+        margin-top: 100px;
+    }
+
+    .responsive-info-pessoais {
+        margin-top: 245px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+        top: 5px;
+    }
+
+    .info-user-left {
+        position: relative;
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .info-email-left {
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .infos-user-left {
+        font-weight: 500;
+    }
+    
+    .info-user-right {
+        background-color: #004aad;
+        padding: 1rem;
+    }
+    
+    .info-user-right p {
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .infos-adicionais-right {
+        padding-top: 15px;
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .infos-adicionais-right + p {
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+
+    ::v-deep(.el-input__wrapper) {
+        font-size: 0.70rem;
+        width: 640px;
+    }
+    
+    .lembrete-aviso {
+        font-size: 0.75rem;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .div-lembrete-aviso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        white-space: normal;
+        width: 100%;
+        text-align: center;
+        padding-left: 5vh;
+    }
+    
+    .div-flex-senha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .responsive-trocar-senha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #bnt-trocar-senha {
+        font-size: 0.80rem;
+        width: 50%;
+    }
+    
+    .loading-container {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .loading-container .v-progess-circular {
+        width: 100px;
+        height: 100px;
+    }
+        
+}
+
+@media (max-width: 480px) {
+
+    .content-main {
+        width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .main {
+        overflow-x: hidden;
+    }
+
+    .responvise-splitter {
+        flex-direction: column;
+    }
+
+    .painel1 {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    ::v-deep(.p-splitter-gutter) {
+        display: none;
+    } 
+
+    .titles {
+        font-size: 0.90rem;
+        position: relative;
+        top: 17px;
+        margin-bottom: 10px;
+    }
+
+    .title-info-pessoais {
+        position: absolute;
+        bottom: 5px;
+        color: #fff;
+    }
+
+    .div-info-pessoais {
+        position: absolute;
+        background-color: #004aad;
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 127px;
+    }
+
+    .img-meus-dados {
+        max-width: 65px;
+        max-height: 70px;
+        margin-top: 80px;
+    }
+
+    .responsive-info-pessoais {
+        margin-top: 245px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+        top: 5px;
+    }
+
+    .info-user-left {
+        position: relative;
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .info-email-left {
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .infos-user-left {
+        font-weight: 500;
+    }
+    
+    .info-user-right {
+        background-color: #004aad;
+        padding: 1rem;
+    }
+    
+    .info-user-right p {
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .infos-adicionais-right {
+        padding-top: 15px;
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .infos-adicionais-right + p {
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+
+    ::v-deep(.el-input__wrapper) {
+        font-size: 0.70rem;
+        width: 640px;
+    }
+    
+    .lembrete-aviso {
+        font-size: 0.75rem;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .div-lembrete-aviso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        white-space: normal;
+        width: 75%;
+        text-align: center;
+        padding-left: 18vh;
+    }
+    
+    .div-flex-senha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .responsive-trocar-senha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #bnt-trocar-senha {
+        font-size: 0.80rem;
+        width: 50%;
+    }
+    
+    .loading-container {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .loading-container .v-progess-circular {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 380px) {
+
+    .content-main {
+        width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .main {
+        overflow-x: hidden;
+    }
+
+    .responvise-splitter {
+        flex-direction: column;
+    }
+
+    .painel1 {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    ::v-deep(.p-splitter-gutter) {
+        display: none;
+    } 
+
+    .titles {
+        font-size: 0.90rem;
+        position: relative;
+        top: 17px;
+        margin-bottom: 10px;
+    }
+
+    .title-info-pessoais {
+        position: absolute;
+        bottom: 5px;
+        color: #fff;
+    }
+
+    .div-info-pessoais {
+        position: absolute;
+        background-color: #004aad;
+        width: 100%;
+        height: 11%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 127px;
+    }
+
+    .img-meus-dados {
+        max-width: 65px;
+        max-height: 70px;
+        margin-top: 100px;
+    }
+
+    .responsive-info-pessoais {
+        margin-top: 245px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+        top: 5px;
+    }
+
+    .info-user-left {
+        position: relative;
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .info-email-left {
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .infos-user-left {
+        font-weight: 500;
+    }
+    
+    .info-user-right {
+        background-color: #004aad;
+        padding: 1rem;
+    }
+    
+    .info-user-right p {
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .infos-adicionais-right {
+        padding-top: 15px;
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+    
+    .infos-adicionais-right + p {
+        font-size: 0.80rem;
+        font-weight: 500;
+    }
+
+    ::v-deep(.el-input__wrapper) {
+        font-size: 0.70rem;
+        width: 640px;
+    }
+    
+    .lembrete-aviso {
+        font-size: 0.75rem;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .div-lembrete-aviso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        white-space: normal;
+        width: 75%;
+        text-align: center;
+        padding-left: 22vh;
+    }
+    
+    .div-flex-senha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .responsive-trocar-senha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    #bnt-trocar-senha {
+        font-size: 0.80rem;
+        width: 50%;
+    }
+    
+    .loading-container {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .loading-container .v-progess-circular {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,116 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.content-main {
+    display: flex;    
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+    position: relative;
+    padding: 2%;
+    box-shadow: 0 -1px  2px rgba(0, 0, 0, 0.2);
+}
+
+.content-select {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.input-select {
+    width: 100%;
+}
+
+::v-deep(.p-multiselect-label.p-placeholder) {
+    height: 32px;
+    font-size: 0.80rem;
+}
+
+::v-deep(.p-multiselect-list) {
+    height: 32px;
+    font-size: 0.80rem;
+}
+
+::v-deep(.p-multiselect-label-container) {
+    font-size: 0.80rem;
+}
+
+.p-multiselect-option {
+    font-size: 0.80rem;
+}
+
+.p-multiselect-label {
+    font-size: 0.75rem;
+}
+
+.card {
+    font-size: 0.85rem;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.produto-imagem {
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-imagem {
+    max-width: 300px;
+    max-height: 400px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        background-color: #409eff;
+        display: flex;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 80px;
+        border-radius: 10px;
+        padding: 5px;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cabecalho .title {
+        font-size: 1.5rem;
+     
+    }
+    
+    .p-h4 {
+        font-size: 0.75em;
+       color: #ffff;
+        padding-left: 10px;
+    }
+    
+    .input-select {
+        width: 100%;
+        font-size: 1.0rem;
+    }
+
+    .p-multiselect-option {
+        font-size: 0.62rem;
+    }
+}

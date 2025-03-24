@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "farmaciarealtime",
+    "n": "farmaciarealtime",
+    "dev": "farmaciarealtime"
+  },
+  "targets": {},
+  "etags": {}
+}

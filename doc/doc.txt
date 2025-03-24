@@ -1,0 +1,33 @@
+
+- Visual {
+
+Visual em sua vesão (não final), não finalizado ainda - v1 - porém conseguimos seguir com a parte de script
+
+}
+
+- script {
+
+CRUD {
+    inserir (ok.. Refinando)
+}
+
+IMPORTANTE - RESPONSIVIDADE PRECISA DE AJUSTES
+
+1  etapa - Trabalhar com o banco de dados (Firebase) ok
+2  etapa - Instalar as dependencias do projeto ok
+3 etapa - Firebase instalado e funcionado (Refatorar via CLI) ok
+4 etapa - Pagina principal de login, já convertida em vue ok
+5 etapa - Finalizar validações e importações da pag login ok
+6 etapa - Integração com o banco de dados ok
+7 etapa - Finalizar validações para o Db e autenticar o usuário na pag inicial ok
+8 etapa - validações na paglogin e e redirecionamento para homepage funcionando ok 
+9 etapa - Agora partir da homepage para outras telas ok 
+10 etapa - em andamento (inserir campos para a opção não tem) ok
+11 etapa - Fazer a persistência dos dados (ok)
+12 etapa - validações com mensagens para o usuário (ok)
+13 etapa - inserir o produto com todas as suas caracterisitcas (ok)
+14 etapa - Consultar os produtos no banco de dados...(ok)
+15 etapa - transição para menu
+16 etapa - quando viável, cria uma funçõ para logar com enter
+}
+

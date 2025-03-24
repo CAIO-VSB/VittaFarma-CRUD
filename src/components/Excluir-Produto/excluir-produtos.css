@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.table {
+    width: 100%;
+}
+
+.div-collapase {
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+.el-button--small {
+    width: 50%;
+    font-size: 0.90rem;
+    position: relative;
+}
+
+.pi-trash {
+    position: absolute;
+    left: 6.9rem;
+    font-size: 0.90rem;
+}
+
+::v-deep(.el-input__wrapper) {
+    font-size: 0.90rem;
+    cursor: pointer;
+}
+
+.buttons-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.bnt-adicionais {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.bnt-adicionais:hover {
+    background-color: #97C6F8;
+    border-color: #97C6F8;
+}
+
+hr {
+    margin: 10px;
+}
+
+@media (max-width: 480px) {
+
+    .table-main {
+        padding-top: 300px;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .el-button--small {
+        width: 50%;
+        font-size: 0.70rem;
+        position: relative;
+    }
+    
+    ::v-deep(.el-input__wrapper) {
+        font-size: 0.70rem;
+        cursor: pointer;
+    }
+
+    ::v-deep(.el-table__header-wrapper) {
+        font-size: 0.60rem;
+        white-space: nowrap;
+        overflow: auto;
+    }
+
+    ::v-deep(.el-table__body-wrapper ) {
+        font-size: 0.55rem;
+        overflow-X: auto !important;
+    }
+
+    ::v-deep(.el-table__body ) {
+        width: auto !important;
+        table-layout: auto !important;
+        overflow: auto !important;
+    }
+  
+    ::v-deep(.el-input--large) {
+        padding: 0;    
+    }
+
+    .pi-trash {
+        position: absolute;
+        left: 3.77rem;
+        font-size: 0.65rem;
+    }
+        
+}

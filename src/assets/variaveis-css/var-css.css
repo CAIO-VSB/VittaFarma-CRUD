@@ -1,0 +1,19 @@
+
+:root {
+    /* colors */
+    --body-color: #e6e7e8;
+    --siderbar-color: #FFF;
+    --primary-color: #0791fa;
+    --primary-color-light: #edf0f2;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+    --color-hover: #409eff;
+    --p-form-field-sm-font-size: 0.60rem
+
+
+    /* transition */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.7s ease;
+    --tran-05: all 0.5s ease;
+}

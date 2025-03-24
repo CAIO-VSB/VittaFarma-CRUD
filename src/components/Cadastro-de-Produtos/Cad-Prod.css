@@ -1,0 +1,573 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    height: auto;
+    width: 80%;
+    font-size: 2.0rem;
+    overflow: auto;
+    border-radius: 10px;
+    margin-top: 19rem;
+    overflow: hidden;
+}
+
+.alerta-form {
+    display: flex;
+    flex-direction: column;
+    border: 0.50px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.h4 {
+    font-size: 0.60em;
+    text-align: center;
+    color: gray;
+}
+
+.p-h4 {
+    font-size: 0.50em;
+    color: gray;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.form-content-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item-geral {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inputContainerPreco {
+    position: relative;
+    left: 11px;
+    width: 98%;
+    height: 34px;
+}
+
+.inputContainer {
+    position: relative;
+    left: 11px;
+    width: 98%;
+}
+
+.inputContainerErrorMedic {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 10px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    height: 34px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorPreco {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 10px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    height: 34px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorRef {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 11px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorLote {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 11px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorNf {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 11px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorDose {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 11px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorForne{
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 11px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    animation: shake .13s 3;
+}
+
+.inputContainerErrorClassi {
+    font-size: 1rem;
+    width: 98%;
+    position: relative;
+    left: 11px;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    animation: shake .13s 3;
+}
+
+.inputTextArea {
+    margin-bottom: 10px;
+    margin-left: 5.5px;
+    width: 99%;
+}
+
+.contenttextarea {
+    margin-bottom: 10px;
+    width: 99%;
+    margin-left: 5.5px;
+    border: 1px solid red;
+    border-radius: 5.5px;
+    animation: shake .13s 3;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.form label {
+    font-size: 0.90rem;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    left: 15px;
+}
+
+.label {
+    position: relative;
+    top: 19px;
+}
+
+.upload {
+    position: relative;
+    top: 24px;
+}
+
+.div-bnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 40px;
+}
+
+.div-bnt .el-button {
+    width: 98%;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.p-fileupload-basic {
+    font-size: 0.80rem;
+    display: flex;
+    width: 80%;
+}
+
+.p-fileupload-advanced {
+    width: 98%;
+    position: relative;
+    left: 13px;
+    font-size: 0.70rem;
+    bottom: 33px;
+}
+
+::v-deep(.p-button ) {
+    font-size: 0.85rem; 
+}
+
+::v-deep(.p-button:disabled ) {
+    display: none; 
+}
+
+::v-deep(.p-fileupload-content) {
+    border: 1px dashed gray;
+}
+
+::v-deep(.p-fileupload-content:hover) {
+    border: 2px dashed #409eff;
+    cursor: pointer;
+}
+
+.alert-tamanho-upload {
+    font-size: 0.70rem;
+    position: relative;
+    left: 15px;
+    bottom: 50px;
+}
+
+.pi-question-circle {
+    position: relative;
+    bottom: 87px;
+    left: 315px;
+    color: #409eff;
+    cursor: pointer;
+}
+
+.pi-dica {
+    position: relative;
+    bottom: 15px;
+    left: 205px;
+    font-size: 0.80rem;
+}
+
+.pi-ajuda {
+    position: relative;
+    bottom: 122px;
+    left: 325px;
+}
+
+/* responsividade.......................................................... */
+ 
+@media (max-width: 380px) {
+    .form {
+        background-color: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        overflow: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 100vh;
+    }
+} 
+
+@media (max-width: 1200px)  {
+    .form {
+        background-color: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        font-size: 2.0rem;
+        overflow: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+.p-fileupload-advanced {
+    width: 98%;
+    position: relative;
+    left: 5px;
+    font-size: 0.70rem;
+}
+
+.cabecalho .title {
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+ 
+}
+
+.inputContainer {
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    left: 3px;
+}
+
+.inputContainerPreco {
+    position: relative;
+    left: 3px;
+    width: 98%;
+    height: 34px;
+}
+
+.input-text-area {
+    margin-bottom: 12px;
+    width: 100%;
+    font-size: 0.80rem;
+    right: 5px;
+}
+
+.form label {
+    font-size: 0.90rem;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    left: 5px;
+}
+
+.label {
+    position: relative;
+    top: 19px;
+}
+
+.cabecalho .subTitle {
+    color: rgba(255, 255, 255, 0.829);
+}
+
+.h4 {
+    font-size: 0.50em;
+    text-align: center;
+    color: gray;
+}
+
+.p-h4 {
+    font-size: 0.40em;
+    color: gray;
+    padding-left: 10px;
+}
+
+.form {
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    font-size: 2.0rem;
+    overflow: auto;
+    border-radius: 10px;
+    margin-top: 60vh;
+    overflow: hidden;
+}
+
+.div-bnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pi-question {
+    position: relative;
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+.pi-dica {
+    position: relative;
+    bottom: 15px;
+    left: 205px;
+    font-size: 0.80rem;
+}
+
+.pi-ajuda {
+    position: relative;
+    bottom: 118px;
+    left: 285px;
+}
+
+.alert-tamanho-upload {
+    font-size: 0.70rem;
+    position: relative;
+    left: 7px;
+    bottom: 50px;
+}
+
+.inputContainer {
+    position: relative;
+    right: 11px;
+    width: 98%;
+    font-size: 0.85rem;
+}
+
+.inputContainerErrorMedic {
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    height: 34px;
+}
+
+.inputContainerErrorPreco {
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    height: 34px;
+}
+
+.inputContainerErrorRef {
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.inputContainerErrorLote {
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.inputContainerErrorNf {
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.inputContainerErrorDose {
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.inputContainerErrorForne{
+    font-size: 1rem;
+    right: 11px;
+    width: 98%;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.inputContainerErrorClassi {
+    font-size: 1rem;
+    position: relative;
+    border: 1px solid red;
+    font-size: 0.85rem;
+    height: 34px;
+    border-radius: 5px;
+    right: 11px;
+    width: 98%;
+}
+
+.inputTextArea {
+    margin-bottom: 10px;
+    width: 100%;
+    right: 10px;
+}
+
+.contenttextarea {
+    margin-bottom: 20px;
+    right: 7px;
+    width: 98%;
+    border: 1px solid red;
+    border-radius: 5.5px;
+}
+
+.p-fileupload-basic {
+    font-size: 0.80rem;
+    display: flex;
+    width: 80%;
+}
+
+.p-fileupload-advanced {
+    left: 3px;
+    width: 99%;
+    position: relative;
+    font-size: 0.70rem;
+    bottom: 33px;
+}
+
+.div-bnt .el-button {
+    width: 98%;
+    position: relative;
+    font-size: 0.90rem;
+    font-weight: 600;
+}
+
+}
+    
+

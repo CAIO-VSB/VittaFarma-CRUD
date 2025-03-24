@@ -1,0 +1,216 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.el-menu {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;  
+}
+
+.el-header {
+    background-color: #176cde;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 2px;
+}
+
+.title-menus {
+    position: absolute;
+    left: 120px;
+    top: 25%;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.el-dropdown {
+    font-size: 1.5rem;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    color: white;
+    top: 29%;
+    cursor: pointer;
+}
+
+.el-main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.collapse {
+    white-space: nowrap;
+    position: relative;
+    right: 14px;
+    bottom: 12px;
+}
+
+.dados-user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #004aad;
+    align-items: center;
+    font-size: 1.0rem;
+    margin-top: 60px;
+    gap: 2px;
+    transition: top 4s;
+}
+
+.sider-bar-hide-data-user {
+    color: #fff;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    color: white;
+    transition: 2s linear ease-in-out;
+}
+
+.data {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+.subImage {
+    max-width: 50px;
+    margin-top: 20px;
+}
+
+.el-menu--collapse .user  {
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.el-menu--collapse .data  {
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.el-menu--collapse .subImage {
+    white-space: nowrap;
+    position: relative;
+    top: 20px;
+}
+
+.spanTitle {
+    color: #409eff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.span {
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.spanEditar {
+    color: black;
+}
+
+.el-menu-item span {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bannerPrincipalHome {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s ease;
+   overflow: hidden;
+   cursor: pointer;
+   width: 100%;
+}
+
+.bannerPrincipalHome:hover {
+    transform: scale(1.0)
+}
+
+.bannerPrincipalHomeHidden {
+    display: none;
+    z-index: 0;
+}
+
+.banner-home-page {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.sair {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 480px) {
+
+.el-menu {
+    position: absolute;
+    z-index: 2;
+}
+
+.el-header {
+    background-color: #176cde;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 0 2px;
+}
+
+.el-menu--collapse {
+    display: none;
+}
+
+.title-menus {
+    position: absolute;
+    left: 120px;
+    top: 25%;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+
+}
+
+
