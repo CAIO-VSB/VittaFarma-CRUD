@@ -346,8 +346,22 @@
         height: auto;
         text-align: center;
         border-radius: 20px;
-        margin-top: 10px;
+        margin-top: 15vh;
     }
+
+    .mainForm {
+        background-color: #38b6ff;
+        height: 100vh;
+        display: flex;
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+    
 
     .labelTelefone {
         display: block;
