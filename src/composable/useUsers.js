@@ -19,8 +19,6 @@
         
                 if (snapshot.exists()) { // Verifico se existe algum dado
                     valores.value = snapshot.val() // Armazeno esses dados em uma variavel
-                } else {
-                    console.log("Usuário não existe")
                 }
             }catch(error) { // Propriedade para lidar somente com erros das promisses
                 console.log("error: " + error)
