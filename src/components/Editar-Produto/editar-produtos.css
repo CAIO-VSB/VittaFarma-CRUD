@@ -120,4 +120,11 @@ hr {
         font-weight: 600;
         color: #606266;    
     }
+
+    .imagem {
+        max-width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

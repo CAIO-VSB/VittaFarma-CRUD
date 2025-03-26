@@ -8,7 +8,6 @@
 
         const loading = vueref(true) // Variavel reativa para o loading
 
-        const totalProdutos = vueref(null)
 
         const  buscarProdutos = async () => {
             loading.value = true // Inico do loading de carregamento

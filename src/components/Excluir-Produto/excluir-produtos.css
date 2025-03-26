@@ -95,5 +95,12 @@ hr {
         left: 3.77rem;
         font-size: 0.65rem;
     }
+
+    .imagem {
+        max-width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
         
 }

@@ -171,7 +171,7 @@
           <p><Strong>Referência:</Strong> {{ produto?.ref }}</p> <!-- Referência do produto com operador opcional -->
           <p><Strong>Valor unitário:</Strong> {{ produto.valor }}</p> <!-- Valor unitário do produto -->
           <p><Strong>Recomendaçãoes:</Strong> {{ produto.recomendacoes }}</p> <!-- Recomendações do produto -->
-          <img :src="produto.imagem"> <!-- Imagem do produto, se disponível -->
+          <img class="imagem" :src="produto.imagem"> <!-- Imagem do produto, se disponível -->
         </div>
         <hr> <!-- Linha horizontal para separar as informações do botão -->
         <div>
